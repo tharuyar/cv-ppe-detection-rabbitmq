@@ -1,0 +1,19 @@
+# Core dependencies
+numpy
+pika
+opencv-python
+
+# For YOLOv5 and PyTorch-based detection
+torch>=1.7
+torchvision
+matplotlib
+PyYAML
+tqdm
+scipy
+pillow
+
+#  YOLOv5 
+seaborn
+requests
+thop
+pandas

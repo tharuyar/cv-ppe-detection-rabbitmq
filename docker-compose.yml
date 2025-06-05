@@ -1,0 +1,27 @@
+# 📁 File: docker-compose.yml
+
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"       # AMQP protocol (used by pika)
+      - "15672:15672"     # Web UI (http://localhost:15672)
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  subscriber:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: subscriber
+    depends_on:
+      - rabbitmq
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - rabbit_net
