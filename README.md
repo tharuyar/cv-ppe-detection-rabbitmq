@@ -5,6 +5,12 @@ This project presents a real-time Personal Protective Equipment (PPE) detection 
 
 By leveraging YOLOv5 for object detection, RabbitMQ for message brokering, and Docker for containerization, the system efficiently processes video streams to identify safety gear such as helmets, vests, and gloves.
 
+![image](https://github.com/user-attachments/assets/53cb88e8-34f6-42ef-b48b-1038f3aca0ed)
+
+![vlcsnap-2025-06-05-13h50m27s902](https://github.com/user-attachments/assets/605775ac-2ff2-4dd1-87a6-b90fc0e55eec)
+
+
+![image](https://github.com/user-attachments/assets/58d6e0e4-7f91-4777-a458-fffcc213c3fe)
 
 
 
